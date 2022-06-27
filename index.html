@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Color Picker</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav id="color-picker-nav">
+                <form id="eye-dropper">
+                    <input type="color" id="favcolor" name="favcolor" value="#rrggbb">
+                </form>
+                <div id="select-menu">
+                    <form action="#">
+                        <select name="colorSchemes" id="color-schemes" style="width: 312px; height: 42px;">
+                            <option value="monochrome">Monochrome</option>
+                            <option value="monochrome-dark">Monochrome-dark</option>
+                            <option value="monochrome-light">Monochrome-light</option>
+                            <option value="analogic">Analogic</option>
+                            <option value="complement">Complement</option>
+                            <option value="analogic-complement">Analogic-complement</option>
+                            <option value="triad">Triad</option>
+                            <option value="quad">Quad</option>
+                        </select>
+                    </form>
+                </div>
+                <button id="get-btn">Get Color Scheme</button>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <div id="color-tiles">
+            <div id="tile1">
+                <div>
+                    <p id="hex1">#45454</p>
+                </div>
+            </div>
+            <div id="tile2">
+                <p id="hex2">#45654</p>
+            </div>
+            <div id="tile3">
+                <p id="hex3">#45454</p>
+            </div>
+            <div id="tile4">
+                <p id="hex4">#45454</p>
+            </div>
+            <div id="tile5">
+                <p id="hex5">#45454</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="./script.js" defer></script>
+
+</html>
